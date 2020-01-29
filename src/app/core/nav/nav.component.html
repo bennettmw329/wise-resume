@@ -1,0 +1,43 @@
+<mz-navbar [navbarClass]="'primary border-bottom'">
+    <span *ngIf="smallResolution" >
+        <i id="sidenav-toggle" class="material-icons left black-text">menu</i>
+    </span>
+    <a routerLink="/" class="brand-logo accent-font black-text">Bennett Wise</a>
+    <mz-navbar-item-container *ngIf="!smallResolution" [align]="'right'">
+        <mz-navbar-item *ngFor="let route of routes">
+            <a class="nav-link" routerLink="{{route.route}}">
+                <span class="animate-underline">
+                    <!-- <i class="fa fa-{{route.icon}} text-primary nav-icon"></i> -->
+                    {{route.name}}
+                </span>
+            </a>
+        </mz-navbar-item>
+    </mz-navbar-item-container>
+</mz-navbar>
+
+<mz-sidenav [id]="'sidenav'" [collapseButtonId]="'sidenav-toggle'" [closeOnClick]="true" [draggable]="true">
+    <mz-sidenav-header>
+        <li>
+            <div class="user-view">
+            <div class="background">
+                <img class="background-image" src="assets/court.jpg">
+            </div>
+            <a href="#user">
+                <img class="circle" src="assets/wise_headshot.jpg">
+            </a>
+            <a href="#name">
+                <span class="accent-font bold white-text name">Bennett Wise</span>
+            </a>
+            <a href="#email">
+                <span class="white-text accent-font">Aspiring Broadcaster</span>
+            </a>
+          </div>
+        </li>
+    </mz-sidenav-header>
+    <mz-sidenav-link *ngFor="let route of routes">
+        <a class="sidenav-link" routerLink="{{route.route}}">
+            <i class="material-icons left">{{route.icon}}</i>
+            {{route.name}}
+        </a>
+    </mz-sidenav-link>
+</mz-sidenav>

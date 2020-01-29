@@ -1,0 +1,29 @@
+<footer class="page-footer primary">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="accent-font bold">For Inquiries</h5>
+                <p class="contact grey-text text-darken-1">
+                    Email: <a class="accent-text" href="mailto:bennettmw329@gmail.com">bennettmw329@gmail.com</a>
+                    <br>
+                    Cell Phone: <a class="accent-text" href="tel:+17036186588">(703) 618-6588</a>
+                </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="accent-font bold">Pages</h5>
+                <ul>
+                    <li *ngFor="let route of routes">
+                        <a class="grey-text text-darken-1 links" routerLink="{{route.route}}">
+                            {{route.name}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright primary-darker">
+        <div class="container">
+            <span class="black-text">&copy; 2020 Bennett Wise</span>
+        </div>
+    </div>
+</footer>

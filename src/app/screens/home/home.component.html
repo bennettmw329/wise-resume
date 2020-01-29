@@ -1,0 +1,76 @@
+<div class="main">
+	<div class="home">
+		<div class="content">
+			<div class="row">
+				<div class="col s12">
+					<h1 class="accent-font">I'm Bennett Wise.</h1>
+					<p class="position">
+						<span class="accent-text">Broadcaster</span>
+						<span class="accent-text">Content Creator</span>
+					</p>
+				</div>
+				<div class="col s12">
+					<a href="#about-me" class="about-me">About Me</a>
+				</div>
+			</div>
+		</div>
+		<app-social-media></app-social-media>
+	</div>
+	<div class="row divider-row">
+		<div class="col s4">
+			<img src="assets/wise_on_camera2.jpg" alt="">
+		</div>
+		<div class="col s4">
+			<img src="assets/wise_interview.JPG" alt="">
+		</div>
+		<div class="col s4">
+			<img src="assets/wise_on_court.JPG" alt="">
+		</div>
+	</div>
+	<div id="about-me">
+		<div class="row subheader">
+			<div class="col s12">
+				<h2 class="accent-font center-align">About Me</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6 center-align">
+					<img class="headshot circle" src="assets/wise_headshot.jpg" alt="">
+				</div>
+				<div class="col s12 m6 overview">
+					<h5 class="accent-font">Name</h5>
+					Bennett Wise
+					<h5 class="accent-font">School</h5>
+					Miami University (Ohio)
+					<h5 class="accent-font">Major</h5>
+					Journalism and Sport Leadership & Management
+					<h5 class="accent-font">Hometown</h5>
+					Warrenton, Virginia
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<h3 class="accent-font center-align">Activities Outside of Media</h3>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div *ngFor="let hobby of hobbies" class="col s16 m6 l4">
+					<mz-card [horizontal]="true" [hoverable]="true">
+						<mz-card-image>
+							<img src="{{hobby.image}}"/>
+						</mz-card-image>
+						<mz-card-title>
+							<span class="accent-font bold">{{hobby.title}}</span>
+						</mz-card-title>
+						<mz-card-content>
+							{{hobby.content}}
+						</mz-card-content>
+					</mz-card>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
