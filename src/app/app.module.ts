@@ -5,8 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MzNavbarModule } from 'ngx-materialize';
 import { MzMediaModule } from 'ngx-materialize';
 import { MzSidenavModule } from 'ngx-materialize';
-import { MzParallaxModule } from 'ngx-materialize';
 import { MzCardModule } from 'ngx-materialize';
+import { MzCollapsibleModule } from 'ngx-materialize';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +18,9 @@ import { BehindCameraComponent } from './screens/behind-camera/behind-camera.com
 import { StoriesComponent } from './screens/stories/stories.component';
 import { ReferencesComponent } from './screens/references/references.component';
 import { SocialMediaComponent } from './core/social-media/social-media.component';
+import { ExperienceComponent } from './core/experience/experience.component';
+import { ExtraActivitiesComponent } from './core/extra-activities/extra-activities.component';
+import { BlockquoteComponent } from './core/blockquote/blockquote.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { SocialMediaComponent } from './core/social-media/social-media.component
     BehindCameraComponent,
     StoriesComponent,
     ReferencesComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    ExperienceComponent,
+    ExtraActivitiesComponent,
+    BlockquoteComponent
   ],
   imports: [
     BrowserModule,
@@ -38,8 +44,8 @@ import { SocialMediaComponent } from './core/social-media/social-media.component
     MzNavbarModule,
     MzMediaModule,
     MzSidenavModule,
-    MzParallaxModule,
-    MzCardModule
+    MzCardModule,
+    MzCollapsibleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

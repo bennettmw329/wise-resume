@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<div class="container">
-			<div class="row">
+			<div class="row valign-wrapper">
 				<div class="col s12 m6 center-align">
 					<img class="headshot circle" src="assets/wise_headshot.jpg" alt="">
 				</div>
@@ -50,27 +50,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col s12">
-				<h3 class="accent-font center-align">Activities Outside of Media</h3>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div *ngFor="let hobby of hobbies" class="col s16 m6 l4">
-					<mz-card [horizontal]="true" [hoverable]="true">
-						<mz-card-image>
-							<img src="{{hobby.image}}"/>
-						</mz-card-image>
-						<mz-card-title>
-							<span class="accent-font bold">{{hobby.title}}</span>
-						</mz-card-title>
-						<mz-card-content>
-							{{hobby.content}}
-						</mz-card-content>
-					</mz-card>
-				</div>
-			</div>
-		</div>
+		<app-experience></app-experience>
+		<app-extra-activities></app-extra-activities>
 	</div>
 </div>

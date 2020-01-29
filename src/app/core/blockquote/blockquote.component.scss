@@ -1,0 +1,29 @@
+blockquote {
+    border-left: none;
+    padding: 0 !important;
+}
+
+hr {
+    color: #383838;
+}
+
+.quote-box {
+    overflow: hidden;
+    background-color: #cccccc;
+    margin-top: 25px;
+}
+
+.quotation-mark {
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 100px;
+    color: #383838;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+.quote-text {
+    padding: 1em;
+    font-size: 19px;
+    margin-top: -65px;
+}
