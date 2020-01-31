@@ -6,14 +6,19 @@
         <span class="accent-font bold">{{reference.name}}</span>
     </mz-card-title>
     <mz-card-content>
-        <p class="accent-font">
-            {{reference.position}}
+        <ul>
+            <li *ngFor="let item of reference.position">
+                {{item}}
+            </li>
+        </ul>
+        <p *ngIf="reference.email">
+            <a href="mailto:{{reference.email}}" class="bold accent-text">{{reference.email}}</a>
         </p>
-        <p>
-            <i class="material-icons left">mail</i><a href="mailto:{{reference.email}}" class="bold">{{reference.email}}</a>
-            <br>
-            <i class="material-icons left">phone</i><a href="tel:{{reference.phone}}" class="bold">{{reference.phone}}</a>
-            <br>
+        <p *ngIf="reference.phone">
+            <a href="tel:{{reference.phone}}" class="bold accent-text">{{reference.phone}}</a>
+        </p>
+        <p *ngIf="reference.twitter">
+            <a href="https://twitter.com/{{reference.twitter}}" class="bold accent-text">{{reference.twitter}}</a>
         </p>
     </mz-card-content>
 </mz-card>
