@@ -21,6 +21,7 @@ import { SocialMediaComponent } from './core/social-media/social-media.component
 import { ExperienceComponent } from './core/experience/experience.component';
 import { ExtraActivitiesComponent } from './core/extra-activities/extra-activities.component';
 import { BlockquoteComponent } from './core/blockquote/blockquote.component';
+import { ReferenceCardComponent } from './core/reference-card/reference-card.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { BlockquoteComponent } from './core/blockquote/blockquote.component';
     SocialMediaComponent,
     ExperienceComponent,
     ExtraActivitiesComponent,
-    BlockquoteComponent
+    BlockquoteComponent,
+    ReferenceCardComponent
   ],
   imports: [
     BrowserModule,

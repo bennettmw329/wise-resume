@@ -1,10 +1,27 @@
 <div class="container">
     <div class="row">
-        <h2 class="accent-font">
+        <h2 class="col s12 accent-font">
             References
         </h2>
     </div>
+    <div *ngFor="let reference of quoteReferences" class="row">
+        <div class="col s12 m6 offset-m3 l4 center-align">
+            <img class="circle big-quote" src="{{reference.image}}" alt="">
+        </div>
+        <div class="col s12 l8">
+            <app-blockquote [reference]="reference"></app-blockquote>
+        </div>
+    </div>
     <div class="row">
-        <app-blockquote [name]="'Quaid'" [quote]="'You suck'" [position]="'Hate you'"></app-blockquote>
+        <div class="col s12 subheader">
+            <h3 class="accent-font">
+                Additional References
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let reference of references" class="col s12 m4 l3 center-align">
+            <app-reference-card [reference]="reference"></app-reference-card>
+        </div>
     </div>
 </div>

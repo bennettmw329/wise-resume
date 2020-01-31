@@ -1,17 +1,24 @@
 <blockquote class="quote-box z-depth-2">
-    <p class="quotation-mark">
-        “
-    </p>
-    <p class="quote-text">
-        {{quote}}
-    </p>
-    <hr>
-    <div class="blog-post-actions">
-        <p class="blog-post-bottom blog-name left">
-            {{name}}
+    <div class="quote-body">
+        <p class="quotation-mark">
+            “
         </p>
-        <p class="blog-post-bottom blog-position left">
-            {{position}}
+        <p class="quote-text">
+            {{reference.quote}}
+        </p>
+    </div>
+    <hr>
+    <div class="quote-bottom">
+        <p class="quote-name accent-font bold">
+            {{reference.name}}
+        </p>
+        <p class="quote-position accent-font">
+            {{reference.position}}
+        </p>
+        <p class="contact-info accent-font">
+            <i class="material-icons left">mail</i><a href="mailto:{{reference.email}}" class="bold">{{reference.email}}</a>
+            <br>
+            <i class="material-icons left">phone</i><a href="tel:{{reference.phone}}" class="bold">{{reference.phone}}</a>
         </p>
     </div>
 </blockquote>
