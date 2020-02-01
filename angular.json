@@ -130,7 +130,16 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "baseHref": "https://bennettmw329.github.io/",
+            "repo": "bennettmw329.github.io",
+            "message": "Page Deployment",
+            "branch": "master",
+            "name": "delaclqm",
+            "email": "quaidd@lesman.com",
+            "noSilent": true,
+            "cname": "bennett-wise.com"
+          }
         }
       }
     }
