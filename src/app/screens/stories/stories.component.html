@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row">
+    <div class="row subheader">
         <div class="col s12">
             <h2 class="accent-font">
                 Stories
@@ -7,24 +7,10 @@
         </div>
     </div>
     <div class="row">
-        <div class="col s12">
-            <h4 class="accent-font">
-                Game Recaps
-            </h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col s12">
-            <h4 class="accent-font">
-                Features
-            </h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col s12">
-            <h4 class="accent-font">
-                Other
-            </h4>
+        <div class="col s12 cards-container">
+            <div *ngFor="let story of stories">
+                <app-story-card [story]="story"></app-story-card>
+            </div>
         </div>
     </div>
 </div>

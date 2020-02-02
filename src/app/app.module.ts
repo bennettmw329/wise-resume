@@ -22,6 +22,8 @@ import { ExperienceComponent } from './core/experience/experience.component';
 import { ExtraActivitiesComponent } from './core/extra-activities/extra-activities.component';
 import { BlockquoteComponent } from './core/blockquote/blockquote.component';
 import { ReferenceCardComponent } from './core/reference-card/reference-card.component';
+import { YoutubeVideoComponent } from './core/youtube-video/youtube-video.component';
+import { StoryCardComponent } from './core/story-card/story-card.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ReferenceCardComponent } from './core/reference-card/reference-card.com
     ExperienceComponent,
     ExtraActivitiesComponent,
     BlockquoteComponent,
-    ReferenceCardComponent
+    ReferenceCardComponent,
+    YoutubeVideoComponent,
+    StoryCardComponent
   ],
   imports: [
     BrowserModule,

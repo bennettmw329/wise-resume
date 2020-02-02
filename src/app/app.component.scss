@@ -1,0 +1,30 @@
+::ng-deep {
+.cards-container {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .card-container {
+    display: inline-block;
+    overflow: visible;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid-column;
+    page-break-inside: avoid;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .cards-container {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+  }
+  @media only screen and (min-width: 901px) {
+    .cards-container {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+    }
+  }
+}

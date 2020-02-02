@@ -8,3 +8,20 @@
     display: inline-flex;
     align-self: flex-end;
 }
+
+.about-me {
+    background: transparent !important;
+	border: 3px solid #313131;
+	color: #000000 !important;
+	height: 6rem !important;
+	line-height: 5.4rem !important;
+	padding: 1rem 3rem 1rem 3rem !important;
+	margin-top: .6rem;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.about-me:hover {
+	border-color: #f75e65;
+}

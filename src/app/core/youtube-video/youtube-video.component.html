@@ -1,0 +1,13 @@
+<div class="card-container">
+    <div class="z-depth-2">
+        <div class="video-container">
+            <iframe [src]="video.url" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="video-details">
+            <h4 class="accent-font">{{video.title}}</h4>
+            <p>{{video.description}}</p>
+        </div>
+    </div>
+</div>
