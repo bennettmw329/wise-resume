@@ -11,14 +11,14 @@ export const otcVideos: Video[] = [
         id: 'gQs3uL2yeXA'
     },
     {
-        title: 'ESPN Sideline Reel',
-        description: 'I have covered men\'s and women\'s basketball and women\'s volleyball for Miami University\'s ESPN3 and ESPN+ Telecasts.',
-        id: 'O3SWuy4b5zY'
-    },
-    {
         title: 'Coach Drake',
         description: 'Coach Drake is a member of the Kalamazoo Growlers organization and is known for his extreme temper! I did the voiceover for all four Coach Drake skits.',
         id: 'vt5AND-h8uc'
+    },
+    {
+        title: 'ESPN Sideline Reel',
+        description: 'I have covered men\'s and women\'s basketball and women\'s volleyball for Miami University\'s ESPN3 and ESPN+ Telecasts.',
+        id: 'O3SWuy4b5zY'
     },
     {
         title: 'Field Hockey Sitdown',
@@ -30,7 +30,7 @@ export const otcVideos: Video[] = [
 export const btcVideos: Video[] = [
     {
         title: 'DSLR',
-        description: 'I have record video at multiple different sporting events, including the LendingTree Bowl, Miami Field Hockey, Volleyball, Swimming and Diving and more.',
+        description: 'I have recorded video at multiple different sporting events, including the LendingTree Bowl, Miami Field Hockey, Volleyball, Swimming and Diving and more.',
         id: 'koXyZWR03Lk'
     },
     {

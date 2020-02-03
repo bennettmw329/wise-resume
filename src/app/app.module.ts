@@ -51,7 +51,7 @@ import { StoryCardComponent } from './core/story-card/story-card.component';
     MzMediaModule,
     MzSidenavModule,
     MzCardModule,
-    MzCollapsibleModule
+    MzCollapsibleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
