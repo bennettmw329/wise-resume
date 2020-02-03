@@ -131,7 +131,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://bennettmw329.github.io/",
+            "baseHref": "",
             "repo": "https://github.com/bennettmw329/bennettmw329.github.io.git",
             "message": "Page Deployment",
             "branch": "master",

@@ -15,16 +15,6 @@ export const otcVideos: Video[] = [
         description: 'I have covered men\'s and women\'s basketball and women\'s volleyball for Miami University\'s ESPN3 and ESPN+ Telecasts.',
         id: 'O3SWuy4b5zY'
     },
-    // {
-    //   title: 'This Week at Miami',
-    //   description: 'Description',
-    //   id: 'W_G7h6N4PDk'
-    // },
-    // {
-    //   title: 'Title',
-    //   description: 'Description',
-    //   id: 'W_G7h6N4PDk'
-    // },
     {
         title: 'Coach Drake',
         description: 'Coach Drake is a member of the Kalamazoo Growlers organization and is known for his extreme temper! I did the voiceover for all four Coach Drake skits.',
@@ -49,9 +39,9 @@ export const btcVideos: Video[] = [
         id: '4o3rwJipZQs'
     },
     {
-        title: 'ICL Feature',
+        title: 'Isaiah Coleman-Lands Feature',
         description: 'Isaiah Coleman-Lands is a redshirt-sophomore on the men\'s basketball team at Miami University. He played high school basketball at La Lumiere School in Indiana, alongside his brother Jalen, and Jaren Jackson Jr. and Jordan Poole of the NBA.',
-        id: 'n_zZkKirSf0'
+        id: 'OjtK89BhOTY'
     },
     {
         title: 'Esbrand Feature',

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'wise-resume';
+  title = 'Bennett Wise';
+
+  onActivate(event) {
+    window.scroll(0, 0);
+  }
 }
