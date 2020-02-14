@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, Subscribable, Subscription } from 'rxjs';
+
 import { references, quoteReferences } from '../../models/Reference';
+import { GoogleSheetService } from 'src/app/services/google-sheet.service';
+
 
 @Component({
   selector: 'app-references',
@@ -8,12 +12,29 @@ import { references, quoteReferences } from '../../models/Reference';
 })
 export class ReferencesComponent implements OnInit {
 
+  private subscription : Subscription = new Subscription();
+
   public references = references;
   public quoteReferences = quoteReferences;
 
-  constructor() { }
+  constructor(private googleSheet : GoogleSheetService) { }
 
   ngOnInit() {
+    this.subscription.add(this.googleSheet.getReferences()
+      .subscribe((data) => {
+
+      }
+    ));
+
+    this.subscription.add(this.googleSheet.getTestimonials()
+      .subscribe((data) => {
+
+      }
+    ));
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
 }

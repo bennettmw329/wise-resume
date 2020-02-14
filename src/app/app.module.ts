@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { HttpClientModule } from '@angular/common/http'; 
 import { MzNavbarModule } from 'ngx-materialize';
 import { MzMediaModule } from 'ngx-materialize';
 import { MzSidenavModule } from 'ngx-materialize';
@@ -47,6 +48,7 @@ import { StoryCardComponent } from './core/story-card/story-card.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MzNavbarModule,
     MzMediaModule,
     MzSidenavModule,
