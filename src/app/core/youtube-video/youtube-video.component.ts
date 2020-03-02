@@ -18,7 +18,7 @@ export class YoutubeVideoComponent implements OnInit {
   }
 
   sanitizeURL() {
-    this.video.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.youtubeBaseUrl + this.video.id)
+    this.video.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.youtubeBaseUrl + this.video.youtubeVideoId);
   }
 
 }
