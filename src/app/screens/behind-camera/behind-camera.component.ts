@@ -26,7 +26,7 @@ export class BehindCameraComponent implements OnInit {
             onCamera: elem[3]
           }
           console.log(video);
-          if (video.onCamera != '1') {
+          if (video.onCamera != '1' && video.title != '' && video.description != '' && video.youtubeVideoId != '' && video.onCamera != '') {
             this.videos.push(video);
           }
         });
