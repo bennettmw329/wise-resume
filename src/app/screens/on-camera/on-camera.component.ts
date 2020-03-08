@@ -24,8 +24,11 @@ export class OnCameraComponent implements OnInit {
             youtubeVideoId: elem[2],
             onCamera: elem[3]
           }
-          console.log(video);
-          if (video.onCamera == '1' && video.title != '' && video.description != '' && video.youtubeVideoId && video.onCamera != '') {
+          if (video.onCamera == '1' 
+            && video.title 
+            && video.description 
+            && video.youtubeVideoId
+            && video.onCamera) {
             this.videos.push(video);
           }
         });
